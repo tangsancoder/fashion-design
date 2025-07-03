@@ -1,11 +1,11 @@
 /* Basic Reset & Typography */
 :root {
-    --primary-color: #ff6f61; /* A vibrant, fashionable red/orange */
-    --secondary-color: #333;
-    --text-color: #555;
-    --light-bg: #f8f8f8;
+    --primary-color: #ffced7; /* A vibrant, fashionable red/orange */
+    --secondary-color: #ffcde7;
+    --text-color: #fff;
+    --light-bg: #000;
     --dark-bg: #222;
-    --white: #fff;
+    --white: #ffced7;
     --border-radius: 8px;
     --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
@@ -73,9 +73,9 @@ h1, h2, h3 {
 
 /* Header & Navigation */
 .header {
-    background-color: var(--white);
+    background-color: black;
     padding: 1rem 5%;
-    display: flex;
+    color: #fea1d1;    display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: var(--box-shadow);
@@ -98,7 +98,7 @@ h1, h2, h3 {
 
 .navbar a {
     font-size: 1.1rem;
-    color: var(--secondary-color);
+    color: #ffcde7;
     margin-left: 2.5rem;
     font-weight: 500;
     position: relative;
@@ -144,7 +144,7 @@ h1, h2, h3 {
 
 /* Home Section / Hero */
 .hero-section {
-    background: url('https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    background: url('bg.png') no-repeat center center/cover;
     color: var(--white);
     padding-top: 100px; /* Offset for fixed header */
     position: relative;
@@ -167,7 +167,7 @@ h1, h2, h3 {
 }
 
 .login-form {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: black;
     padding: 40px;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
@@ -200,7 +200,7 @@ h1, h2, h3 {
 
 .login-form button {
     background-color: var(--primary-color);
-    color: var(--white);
+    color:black;
     padding: 12px 25px;
     border: none;
     border-radius: 5px;
@@ -213,7 +213,7 @@ h1, h2, h3 {
 }
 
 .login-form button:hover {
-    background-color: #e65c50; /* Slightly darker red */
+    background-color: #fea1d1; /* Slightly darker red */
 }
 
 .login-form .signup-link {
@@ -318,6 +318,10 @@ h1, h2, h3 {
     background-color: var(--white);
     padding-top: 100px; /* Offset for fixed header */
     flex-direction: column;
+    color: #000;
+}
+.contact-section h2{
+    color:black
 }
 
 .contact-form {
@@ -350,7 +354,7 @@ h1, h2, h3 {
 
 .contact-form button {
     background-color: var(--primary-color);
-    color: var(--white);
+    color: black;
     padding: 12px 25px;
     border: none;
     border-radius: 5px;
@@ -361,7 +365,7 @@ h1, h2, h3 {
 }
 
 .contact-form button:hover {
-    background-color: #e65c50;
+    background-color: #fea1d1;
 }
 
 .contact-info {
@@ -372,7 +376,7 @@ h1, h2, h3 {
 }
 
 .contact-info h3 {
-    color: var(--primary-color);
+    color: var(--light-bg);
     margin-bottom: 15px;
     font-size: 1.5rem;
 }
@@ -383,7 +387,7 @@ h1, h2, h3 {
 }
 
 .contact-info a {
-    color: var(--primary-color);
+    color: var(--light-bg);
     font-weight: 500;
 }
 
@@ -402,7 +406,7 @@ h1, h2, h3 {
 .qr-image {
     width: 150px;
     height: 150px;
-    border: 5px solid var(--primary-color);
+    border: 5px solid #fea1d1;
     border-radius: var(--border-radius);
 }
 
@@ -445,6 +449,7 @@ h1, h2, h3 {
     }
     .section {
         padding: 60px 3%;
+
     }
     .section-title {
         font-size: 2rem;
@@ -491,6 +496,7 @@ h1, h2, h3 {
 
     .hero-section {
         padding-top: 120px;
+        
     }
 
     .login-form {
@@ -523,6 +529,7 @@ h1, h2, h3 {
         font-size: 1.8rem;
     }
     .login-form {
+        
         padding: 20px;
     }
     .login-form h2 {
@@ -535,4 +542,17 @@ h1, h2, h3 {
         padding: 10px;
         font-size: 1rem;
     }
+}
+::-webkit-scrollbar{
+    width: 16px;
+}
+::-webkit-scrollbar-track{
+    background-color: #000;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #fea1d1;
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #ffcde7;
 }
